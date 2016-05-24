@@ -1,4 +1,4 @@
-package ksichenko;
+package ksichenko.Market;
 
 public class Goods {
     private String goodsName;

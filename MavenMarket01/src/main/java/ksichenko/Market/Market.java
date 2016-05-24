@@ -1,4 +1,4 @@
-package ksichenko;
+package ksichenko.Market;
 
 import java.util.LinkedList;
 import java.util.List;
