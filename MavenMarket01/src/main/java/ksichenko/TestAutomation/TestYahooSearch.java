@@ -1,5 +1,3 @@
-package ksichenko.TestAutomation;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,13 +23,8 @@ public class TestYahooSearch {
                 .findElement(By.xpath(".//*[@id='uh-search-button']"))
                 .click();
 
-        String actualTitle = "Test Automation Software | Atlassian.com";
-        String expectedTitle = driver.getTitle();
-
         Assert
-                .assertTrue(driver.getTitle()
+                .assertTrue(driver.findElements(By.xpath("//div[@id='yui_3_10_0_1_1464285672612_1028']//a[@id='yui_3_10_0_1_1464285672612_1026']"))
                 .contains("test automation"));
     }
 }
-
-
